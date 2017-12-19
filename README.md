@@ -80,14 +80,14 @@ Cabe mencionar que ciertas combinaciones de operaciones crearían algoritmos que
 
 **Cuando se citan operaciones que no vienen por defecto estamos suponiendo los nombres que hemos utilizado en los ejemplos**
 
-* **Resta  ->  resta/2/suma(-)**
-* **Multiplicación  ->  multiplicacion/2/repeticion(0)/suma**
-* **División  ->  division/2/repeticion(max)/suma**
-* **Potencia  ->  potencia/2/repeticion(1)/multiplicacion**
-* **Factorial  ->  factorial/1/repeticion(iter)/multiplicacion**
-* **Porcentaje  ->  porcentaje/3/multiplicacion/division *(al ejecutar el código generado, el tercer operando sería 100)***
-* **Media  ->  media/3/suma/division *(al ejecutar el código generado, el tercer operando sería 2)***
-* **Raíz Cuadrada  ->  raiz/1/repeticion(tanteo)/multiplicacion**
+* **Resta**  ->  resta/2/suma(-)
+* **Multiplicación**  ->  multiplicacion/2/repeticion(0)/suma
+* **División**  ->  division/2/repeticion(max)/suma
+* **Potencia**  ->  potencia/2/repeticion(1)/multiplicacion
+* **Factorial**  ->  factorial/1/repeticion(iter)/multiplicacion
+* **Porcentaje**  ->  porcentaje/3/multiplicacion/division *(al ejecutar el código generado, el tercer operando sería 100)*
+* **Media**  ->  media/3/suma/division *(al ejecutar el código generado, el tercer operando sería 2)*
+* **Raíz Cuadrada**  ->  raiz/1/repeticion(tanteo)/multiplicacion
 
 
 ## Otras consideraciones
