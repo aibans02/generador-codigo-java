@@ -1,20 +1,20 @@
-# Generador de código en java
+# Generador de código en Java
 Generador de código en lenguaje Java a partir de un lenguaje de más alto nivel (creado por los desarrolladores) basado en el lenguaje natural.
 
-## Getting Started
+
+## Primeros pasos
 Los comandos que aparecen a continuación se corresponden con una terminal de tipo Bash.
 
-### Prerequisites
-Es necesario tener instalado el siguiente entorno para poder ejecutar la App: 
 
-```
--Java JDK 8 o superior
--git
-```
+### Requisitos
+Para seguir las instrucciones siguientes y garantizar un correcto comportamiento son necesarios estos componentes:
+* Java JDK 8 o superior
+* git
 
-### Installing
 
-Escribir en la terminal:
+### Preparación
+
+Clonamos el repositorio:
 
 ```
 $ git clone https://github.com/dpereg06/generador-codigo-java.git
@@ -42,22 +42,22 @@ Finalmente ejecutamos el programa:
 
 ```
 $ cd bin
-```
-
-```
 $ java es.unileon.inco.GeneradorCodigo
 ```
 Las nuevas clases se generan dentro de src en el paquete es.unileon.inco, si se quieren testear habría que compilarlas y ejecutarlas como se indicó anteriormente.
 
-## How to use
+
+## Utilización
 
 Tras ejecutar el programa este se quedará a la espera de que introduzcamos una orden:
 
 * **salir**  ->  se producirá el fin de la ejecución del programa.
 
-La sintáxis a utilizar será la siguiente:
+La sintaxis a utilizar será la siguiente:
 
 **nombreClase/nº_operandos/operacion1(flag_si_se_necesitase)/operacion2**
+
+El parámetro *operacion2* puede no ser necesario.
 
 Las operaciones que por defecto vienen implementadas son Negación, Repetición y Suma.
 
@@ -72,11 +72,12 @@ Los flags admitidos por las operaciones son los siguientes:
 
 (La operación Repetición siempre debe ir acompañada de un flag)
 
-Si se especifican 3 operandos, el resultado de realizar la primera operación con los dos primeros operandos será utilizado junto al tercer operando para obtener el resultado final.
+Si se especifican 3 operandos, el resultado de realizar la primera operación con los dos primeros operandos será utilizado junto al tercer operando para obtener el resultado final aplicando la segunda operación.
 
-### Algunos ejemplos que crearían operaciones ya existentes
 
-Cabe mencionar que ciertas combinaciones de operaciones crearían algoritmos que no se corresponden con ninguna operación natural (he aquí la gracia de un generador de código ;) )
+### Algunos ejemplos para crear operaciones matemáticas ya existentes
+
+Cabe mencionar que ciertas combinaciones de operaciones crearían algoritmos que no se corresponden con ninguna operación natural (ahí radica también el potencial de un generador de código :wink:)
 
 **Cuando se citan operaciones que no vienen por defecto estamos suponiendo los nombres que hemos utilizado en los ejemplos**
 
@@ -90,23 +91,30 @@ Cabe mencionar que ciertas combinaciones de operaciones crearían algoritmos que
 * **Raíz Cuadrada**  ->  raiz/1/repeticion(tanteo)/multiplicacion
 
 
-## Otras consideraciones
+## Consideraciones
 
-Es indiferente que se utilicen mayúsculas o minúsculas a la hora de introducir el nombre de las operaciones (**No case-sensitive**)
+* Es indiferente que se utilicen mayúsculas o minúsculas a la hora de introducir el nombre de las operaciones (**not case-sensitive**)
 
-Este programa sólo trabajo con enteros
+* Este programa sólo trabaja con números enteros
 
-El código se generará en la carpeta src dentro del paquete es.unileon.inco
+* El código se generará en la carpeta src dentro del paquete es.unileon.inco
 
-## Authors
+
+## Funcionamiento interno
+
+La generación del código para nuevas operaciones a partir de las ya existentes funciona de la siguiente manera:
+Se interpreta la entrada del usuario, identificando el número de operandos, las operaciones a combinar y los flags. En función de todo ello, se va construyendo el código de la clase Java con la lectura de los operandos por teclado y las invocaciones pertinentes a las clases de las operaciones creadas anteriormente, guardando resultados parciales en caso de ser necesario. Finalmente, una vez completado el código, se genera el fichero de la clase Java para la nueva operación creada.
+
+
+## Autores
+
+Han colaborado, por orden alfabético del primer apellido:
 
 * **Carlos Fernández San Juan**
 * **Armando Ibán Sánchez** 
 * **David Pérez Gago**
 
-(Órden alfabético)
 
-## License
+## Licencia/License
 
 This project is licensed under GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
-
