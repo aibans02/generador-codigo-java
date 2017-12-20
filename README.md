@@ -96,6 +96,8 @@ Es indiferente que se utilicen mayúsculas o minúsculas a la hora de introducir
 
 Este programa sólo trabajo con enteros
 
+El código se generará en la carpeta src dentro del paquete es.unileon.inco
+
 ## Authors
 
 * **Carlos Fernández San Juan**
