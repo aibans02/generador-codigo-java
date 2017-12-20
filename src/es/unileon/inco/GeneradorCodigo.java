@@ -103,7 +103,7 @@ public class GeneradorCodigo {
 
 				else if (split.length == 3) {
 					if (split[2].equals("Suma(-)")) {
-						codigo.append("return Suma.resolver(op1,Negacion.resolver(op2));\n}\n\n}");
+						codigo.append("\t\treturn Suma.resolver(op1,Negacion.resolver(op2));\n\t}\n\n}");
 
 					} else
 						throw new Exception();
