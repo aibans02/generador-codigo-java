@@ -94,6 +94,8 @@ Cabe mencionar que ciertas combinaciones de operaciones crearían algoritmos que
 
 Es indiferente que se utilicen mayúsculas o minúsculas a la hora de introducir el nombre de las operaciones (**No case-sensitive**)
 
+Este programa sólo trabajo con enteros
+
 ## Authors
 
 * **Carlos Fernández San Juan**
